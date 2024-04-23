@@ -46,7 +46,7 @@ Table of contents
     02. CSS color variable
 ====================================== */
 :root {
-  --base-color: #2946f3;
+  --base-color: #09A8FF;
   --white: #ffffff;
   --black: #000000;
   --red: #dc3131;
@@ -83,6 +83,7 @@ Table of contents
   --camarone: #20642b;
   --seal-brown: #0e0708;
   --Wasabi: #8ea63a;
+  --vmtool: #09A8FF;
 }
 
 /* ===================================
@@ -348,16 +349,16 @@ b, strong {
   line-height: 3.75rem;
 }
 .fs-65 {
-  font-size: 4.063rem;
-  line-height: 4.688rem;
+  font-size: 3.063rem;
+  line-height: 3.688rem;
 }
 .fs-70 {
   font-size: 4.375rem;
   line-height: 4.375rem;
 }
 .fs-75 {
-  font-size: 4.668rem;
-  line-height: 4.668rem;
+  font-size: 3.668rem;
+  line-height: 3.668rem;
 }
 .fs-80 {
   font-size: 5rem;
@@ -592,6 +593,15 @@ b, strong {
 .text-dark-gray, .btn-link.text-dark-gray, a.text-dark-gray-hover:hover {
   color: var(--dark-gray);
 }
+
+h2.alt-font.text-dark-gray.fw-600.ls-minus-3px.mx-auto {
+    color: var(--vmtool);
+}
+
+i.bi.bi-hourglass.d-inline-block.icon-extra-medium.text-dark-gray{
+  color: var(--white) !important;
+}
+
 .text-medium-gray, .btn-link.text-medium-gray, a.text-medium-gray-hover:hover {
   color: var(--medium-gray);
 }
@@ -3218,7 +3228,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   background-color: var(--crusoe-green);
 }
 .bg-yellow {
-  background-color: var(--yellow);
+  background-color: var(--vmtool);
 }
 .bg-charcoal-blue {
   background-color: var(--charcoal-blue);
@@ -7009,7 +7019,7 @@ header .navbar-brand .alt-logo, header .navbar-brand .mobile-logo {
   width: 0;
 }
 header .navbar-brand img {
-  max-height: 46px;
+  max-height: 80px;
 }
 header .header-top-bar {
   position: fixed;
@@ -10315,13 +10325,13 @@ blockquote footer {
   color: var(--base-color);
 }
 .btn.btn-dark-gray {
-  background-color: var(--dark-gray);
+  background-color: var(--vmtool);
   color: var(--white);
 }
 .btn.btn-dark-gray:hover, .btn.btn-dark-gray:active {
-  background-color: transparent;
-  border-color: var(--dark-gray);
-  color: var(--dark-gray);
+  background-color: var(--vmtool);
+  border-color: var(--vmtool);
+  color: var(--white);
 }
 .btn.btn-black {
   background-color: var(--black);
@@ -10411,12 +10421,12 @@ blockquote footer {
 }
 .btn.btn-transparent-light-gray {
   background-color: transparent;
-  border-color: var(--extra-medium-gray);
-  color: var(--dark-gray);
+  border-color: var(--vmtool);
+  color: var(--vmtool);
 }
 .btn.btn-transparent-light-gray:hover, .btn.btn-transparent-light-gray:active {
-  background-color: var(--dark-gray);
-  border-color: var(--dark-gray);
+  background-color: var(--vmtool);
+  border-color: var(--vmtool);
   color: var(--white);
 }
 .btn.btn-double-border.btn-extra-large {
@@ -19231,4 +19241,47 @@ footer .footer-navbar .nav-item:last-child a {
 }
 .footer-demo img {
   max-height: 55px !important;
+}
+
+/* VMTOOL*/
+.hero-home-bg {
+  background: rgb(5,248,252);
+background: linear-gradient(32deg, rgba(5,248,252,1) 0%, rgba(11,38,109,1) 64%);
+}
+
+section#down-section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.bg-highlight {
+    background: #B7F9F7;
+    padding: 30px;
+}
+
+.ftrs-bg {
+  background-color: #0A266D !important;
+}
+
+video.vid-home {
+    /* height: 380px; */
+}
+
+footer.bg-gradient-aztec-green.position-relative {
+  background: rgb(5,248,252);
+background: linear-gradient(32deg, rgba(5,248,252,1) 0%, rgba(11,38,109,1) 64%);
+}
+
+h6.alt-font.fw-600.text-dark-gray.m-0.ls-minus-1px.d-inline-block.me-30px.lg-me-0.pt-10px.pb-10px {
+    margin-bottom: 1rem !important;
+    color: white;
+}
+
+.footer-light a {
+    color: white;
+    opacity: .7;
+}
+
+.p-0.hero-home-bg.overflow-hidden.bg-dark-gray.full-screen.ipad-top-space-margin.md-h-auto.position-relative.md-pb-70px.sm-pb-40px.cover-background.h-custom {
+  height: 150px !important;
 }
